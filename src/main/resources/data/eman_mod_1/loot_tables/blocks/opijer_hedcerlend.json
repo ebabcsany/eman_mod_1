@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 97,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "eman_mod_1:opijer_hedcerlend"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ervin_mod_1:terat"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:end_portal_frame"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ervin_mod_1:leat_block_crafting_table"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "eman_mod_1:pirzen_urne"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "eman_mod_1:pirzen_urne_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ervin_mod_1:hus_os_sajt"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}

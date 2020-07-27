@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:dirt"
+    },
+    "result": {
+      "item": "eman_mod_1:dirt_stick",
+      "count": 2
+    }
+  }
+}

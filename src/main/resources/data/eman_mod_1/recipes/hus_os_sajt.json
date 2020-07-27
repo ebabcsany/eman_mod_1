@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "Z#Z",
+    "MMM"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:cooked_beef"
+    },
+    "Z": {
+      "item": "eman_mod_1:sajt"
+    },
+    "M": {
+      "item": "minecraft:paper"
+    },
+    "result": {
+      "item": "eman_mod_1:hus_os_sajt",
+      "count": 2
+    }
+  }
+}

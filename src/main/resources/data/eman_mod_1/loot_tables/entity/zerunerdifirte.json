@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 8,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "eman_mod_1:kiwiterdia"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "eman_mod_1:doeirtidopi"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "eman_mod_1:hus_os_sajt"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "eman_mod_1:irtatedserwint_krezon"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}

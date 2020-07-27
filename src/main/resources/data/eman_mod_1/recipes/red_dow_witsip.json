@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P***P",
+    "*M#M*",
+    "*LXL*",
+    "*M#M*",
+    "P*T*P"
+  ],
+  "key": {
+    "#": {
+      "item": "ervin_mod_1:red_stone"
+    },
+    "*": {
+      "item": "minecraft:diamond_block"
+    },
+    "T": {
+      "item": "ervin_mod_1:leat"
+    },
+    "L": {
+      "item": "eman_mod_1:daxi_rof_tuzzi"
+    },
+    "P": {
+      "item": "ervin_mod_1:sriunk_stick"
+    },
+    "X": {
+      "item": "minecraft:ender_dragon_egg"
+    },
+    "M": {
+      "item": "minecraft:ender_dragon_head"
+    },
+    "result": {
+      "item": "eman_mod_1:red_dow_witsip",
+      "count": 1
+    }
+  }
+}

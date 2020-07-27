@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "eman_mod_1:item/pirzen_urne_axe"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "eman_mod_1:pirzen_urne"
+    }
+  },
+  "result": {
+    "item": "eman_mod_1:bionrinen_udeztri",
+    "count": 1
+  }
+}

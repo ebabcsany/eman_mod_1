@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# ",
+    " Z"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:sweet_berries"
+    },
+    "Z": {
+      "item": "minecraft:milk_bucket"
+    },
+    "result": {
+      "item": "eman_mod_1:sajt",
+      "count": 12
+    }
+  }
+}
