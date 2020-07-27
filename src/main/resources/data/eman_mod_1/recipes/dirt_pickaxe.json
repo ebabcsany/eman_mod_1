@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:dirt_stick"
+    },
+    "S": {
+      "item": "minecraft:dirt"
+    },
+    "result": {
+      "item": "eman_mod_1:dirt_pickaxe",
+      "count": 2
+    }
+  }
+}
