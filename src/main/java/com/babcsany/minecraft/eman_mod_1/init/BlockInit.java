@@ -2,7 +2,10 @@ package com.babcsany.minecraft.eman_mod_1.init;
 
 import com.babcsany.minecraft.eman_mod_1.Eman_mod_1;
 import com.babcsany.minecraft.eman_mod_1.block.*;
+import com.babcsany.minecraft.eman_mod_1.world.feature.FirgTree;
+import com.babcsany.minecraft.eman_mod_1.world.feature.ModSaplingBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -13,7 +16,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class BlockInit {
 
-    public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, Eman_mod_1.MOD_ID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Eman_mod_1.MOD_ID);
 
     public static final RegistryObject<Block> RED_DOW_WITSIP = BLOCKS.register("red_dow_witsip", () -> new RedDowWitsip(
             Block.Properties.create(Material.ROCK)
@@ -62,5 +65,20 @@ public class BlockInit {
                     .harvestLevel(1)
                     .harvestTool(ToolType.PICKAXE)
                     .hardnessAndResistance(10.0f)
+    ));
+    public static final RegistryObject<Block> FIRG_SAPLING = BLOCKS.register("firg_sapling",
+            () -> new ModSaplingBlock(() -> new FirgTree(), Block.Properties.from(Blocks.OAK_SAPLING)));
+
+    public static final RegistryObject<Block> FIRG_LOG = BLOCKS.register("firg_log", () -> new FirgLog(
+            MaterialColor.WOOD, Block.Properties.create(Material.WOOD)
+            .hardnessAndResistance(2.0F)
+            .sound(SoundType.WOOD)
+    ));
+    public static final RegistryObject<Block> FIRG_LEAVES = BLOCKS.register("firg_leaves", () -> new FirgLeaves(
+            Block.Properties.create(Material.LEAVES)
+                    .hardnessAndResistance(0.2F)
+                    .tickRandomly()
+                    .sound(SoundType.PLANT)
+                    .notSolid()
     ));
 }

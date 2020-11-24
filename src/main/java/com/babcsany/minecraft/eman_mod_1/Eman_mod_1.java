@@ -1,8 +1,10 @@
 package com.babcsany.minecraft.eman_mod_1;
 
+import com.babcsany.minecraft.eman_mod_1.entity.animal.Zerunerdifirte;
 import com.babcsany.minecraft.eman_mod_1.init.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -13,6 +15,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
@@ -35,6 +38,7 @@ public class Eman_mod_1 {
     public static final String MOD_ID = "eman_mod_1";
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
+    public static final ResourceLocation EXAMPLE_DIM_TYPE = new ResourceLocation(Eman_mod_1.MOD_ID, "example");
 
     public Eman_mod_1() {
         // Register the setup method for modloading
@@ -54,12 +58,17 @@ public class Eman_mod_1 {
         BlockInit.BLOCKS.register(modEventBus);
      //   ContainerInit.CONTAINER_TYPES.register(modEventBus);
         EntityInit.ENTITY_TYPES.register(modEventBus);
+        BiomeInit.BIOMES.register(modEventBus);
+        //DimensionInit.MOD_DIMENSIONS.register(modEventBus);
     }
 
     private void setup(final FMLCommonSetupEvent event) {
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        DeferredWorkQueue.runLater(() -> {
+            GlobalEntityTypeAttributes.put(EntityInit.ZERUNERDIFIRTE.get(), Zerunerdifirte.setCustomAttributes().create());
+        });
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {

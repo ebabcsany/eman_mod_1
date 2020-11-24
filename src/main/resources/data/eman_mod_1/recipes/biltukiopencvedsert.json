@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ZZZ",
+    "Z#Z",
+    "ZZZ"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "Z": {
+      "item": "eman_mod_1:daxi_rof_tuzzi"
+    }
+  },
+  "result": {
+    "item": "eman_mod_1:biltukiopencvedsert",
+    "count": 1
+  }
+}

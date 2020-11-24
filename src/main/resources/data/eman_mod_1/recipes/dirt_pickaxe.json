@@ -1,20 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "SSS",
-    " # ",
-    " # "
+    "###",
+    " S ",
+    " S "
   ],
   "key": {
     "#": {
-      "item": "minecraft:dirt_stick"
-    },
-    "S": {
       "item": "minecraft:dirt"
     },
-    "result": {
-      "item": "eman_mod_1:dirt_pickaxe",
-      "count": 2
+    "S": {
+      "item": "eman_mod_1:dirt_stick"
     }
+  },
+  "result": {
+    "item": "eman_mod_1:dirt_pickaxe",
+    "count": 1
   }
 }

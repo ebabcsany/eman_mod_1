@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ZZZ",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "eman_mod_1:biltukiopencvedsert"
+    },
+    "Z": {
+      "item": "eman_mod_1:daxi_rof_tuzzi"
+    }
+  },
+  "result": {
+    "item": "eman_mod_1:daxi_rof_tuzzi_pickaxe",
+    "count": 1
+  }
+}

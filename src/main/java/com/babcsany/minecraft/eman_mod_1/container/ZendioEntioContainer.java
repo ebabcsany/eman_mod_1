@@ -1,6 +1,6 @@
 package com.babcsany.minecraft.eman_mod_1.container;
 
-import com.babcsany.minecraft.eman_mod_1.client.inventory.ZendioEntioInventory;
+import com.babcsany.minecraft.eman_mod_1.inventory.ZendioEntioInventory;
 import com.babcsany.minecraft.eman_mod_1.init.BlockInit;
 import com.babcsany.minecraft.eman_mod_1.init.ContainerInit;
 import com.google.common.collect.Lists;
@@ -29,7 +29,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.util.List;
 import java.util.Optional;
 
-/*public class ZendioEntioContainer extends RecipeBookContainer<CraftingInventory> {
+public class ZendioEntioContainer extends RecipeBookContainer<CraftingInventory> {
     private static final int CRAFT_MATRIX_WIDTH = 5;
     private static final int CRAFT_MATRIX_HEIGHT = 5;
     private static final int CRAFT_RESULT_X_POSITION = 177;
@@ -54,7 +54,6 @@ import java.util.Optional;
         this.field_217070_e = p_i50090_3_;
         this.player = playerInventory.player;
         this.addSlot(new CraftingResultSlot(playerInventory.player, this.craftMatrix, this.craftResult, CRAFT_RESULT_SLOT_INDEX, CRAFT_RESULT_X_POSITION, CRAFT_RESULT_Y_POSITION));
-        this.addSlot(new Slot(craftingTableInventory, 9, 209, 45));
 
         for(int i = 0; i < CRAFT_MATRIX_HEIGHT; ++i) {
             for(int j = 0; j < CRAFT_MATRIX_WIDTH; ++j) {
@@ -62,20 +61,18 @@ import java.util.Optional;
             }
         }
 
-        for(int k = 0; k < 5; ++k) {
-            for(int i1 = 0; i1 < 1; ++i1) {
-                this.addSlot(new Slot(craftingTableInventory, i1 + k * 1 + 1, 14 + i1 * 18, 110 + k * 18));
-            }
+        for(int l = 0; l < 9; ++l) {
+            this.addSlot(new Slot(craftingTableInventory, l, 47 + l * 18, 98));
         }
 
         for(int k = 0; k < 3; ++k) {
             for(int i1 = 0; i1 < 9; ++i1) {
-                this.addSlot(new Slot(playerInventory, i1 + k * 9 + 9, 47 + i1 * 18, 125 + k * 18));
+                this.addSlot(new Slot(playerInventory, i1 + k * 9 + 9, 47 + i1 * 18, 129 + k * 18));
             }
         }
 
         for(int l = 0; l < 9; ++l) {
-            this.addSlot(new Slot(playerInventory, l, 47 + l * 18, 183));
+            this.addSlot(new Slot(playerInventory, l, 47 + l * 18, 187));
         }
 
     }
@@ -104,7 +101,7 @@ import java.util.Optional;
     /**
      * Callback for when the crafting matrix is changed.
      */
-    /*public void onCraftMatrixChanged(IInventory inventoryIn) {
+    public void onCraftMatrixChanged(IInventory inventoryIn) {
         this.field_217070_e.consume((p_217069_1_, p_217069_2_) -> {
             func_217066_a(this.windowId, p_217069_1_, this.player, this.craftMatrix, this.craftResult);
         });
@@ -112,11 +109,6 @@ import java.util.Optional;
 
     public void fillStackedContents(RecipeItemHelper itemHelperIn) {
         this.craftMatrix.fillStackedContents(itemHelperIn);
-    }
-
-    @Override
-    public void func_201771_a(RecipeItemHelper p_201771_1_) {
-
     }
 
     public void clear() {
@@ -131,7 +123,7 @@ import java.util.Optional;
     /**
      * Called when the container is closed.
      */
-    /*public void onContainerClosed(PlayerEntity playerIn) {
+    public void onContainerClosed(PlayerEntity playerIn) {
         super.onContainerClosed(playerIn);
         this.field_217070_e.consume((p_217068_2_, p_217068_3_) -> {
             this.clearContainer(playerIn, p_217068_2_, this.craftMatrix);
@@ -141,7 +133,7 @@ import java.util.Optional;
     /**
      * Determines whether supplied player can use this container
      */
-    /*public boolean canInteractWith(PlayerEntity playerIn) {
+    public boolean canInteractWith(PlayerEntity playerIn) {
         return isWithinUsableDistance(this.field_217070_e, playerIn, BlockInit.ZENDIO_ENTIO.get());
     }
 
@@ -149,7 +141,7 @@ import java.util.Optional;
      * Handle when the stack in slot {@code index} is shift-clicked. Normally this moves the stack between the player
      * inventory and the other inventory(s).
      */
-    /*public ItemStack transferStackInSlot(PlayerEntity playerIn, int index) {
+    public ItemStack transferStackInSlot(PlayerEntity playerIn, int index) {
         ItemStack itemstack = ItemStack.EMPTY;
         Slot slot = this.inventorySlots.get(index);
         if (slot != null && slot.getHasStack()) {
@@ -201,7 +193,7 @@ import java.util.Optional;
      * Called to determine if the current slot is valid for the stack merging (double-click) code. The stack passed in is
      * null for the initial slot that was double-clicked.
      */
-    /*public boolean canMergeSlot(ItemStack stack, Slot slotIn) {
+    public boolean canMergeSlot(ItemStack stack, Slot slotIn) {
         return slotIn.inventory != this.craftResult && super.canMergeSlot(stack, slotIn);
     }
 
@@ -224,7 +216,6 @@ import java.util.Optional;
 
     @Override
     public List<RecipeBookCategories> getRecipeBookCategories() {
-        return Lists.newArrayList(RecipeBookCategories.SEARCH, RecipeBookCategories.EQUIPMENT, RecipeBookCategories.BUILDING_BLOCKS, RecipeBookCategories.MISC, RecipeBookCategories.REDSTONE);
+        return Lists.newArrayList(RecipeBookCategories.SEARCH, RecipeBookCategories.CRAFTING_EQUIPMENT, RecipeBookCategories.CRAFTING_BUILDING_BLOCKS, RecipeBookCategories.CRAFTING_MISC, RecipeBookCategories.CRAFTING_REDSTONE);
     }
-}*/
-
+}

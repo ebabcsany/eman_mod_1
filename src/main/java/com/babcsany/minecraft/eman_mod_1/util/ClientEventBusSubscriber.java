@@ -2,17 +2,9 @@ package com.babcsany.minecraft.eman_mod_1.util;
 
 import com.babcsany.minecraft.eman_mod_1.Eman_mod_1;
 import com.babcsany.minecraft.eman_mod_1.client.entity.render.ZerunerdifirteRender;
-import com.babcsany.minecraft.eman_mod_1.init.ContainerInit;
 import com.babcsany.minecraft.eman_mod_1.init.EntityInit;
-import com.babcsany.minecraft.eman_mod_1.Eman_mod_1;
-import com.babcsany.minecraft.eman_mod_1.client.entity.render.ZerunerdifirteRender;
-//import com.babcsany.minecraft.eman_mod_1.client.gui.LeatBlockCraftingTableScreen;
-import com.babcsany.minecraft.eman_mod_1.init.ContainerInit;
-import com.babcsany.minecraft.eman_mod_1.init.EntityInit;
-import net.minecraft.client.gui.ScreenManager;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -29,5 +21,9 @@ public class ClientEventBusSubscriber {
         /*DeferredWorkQueue.runLater(() -> {
             ScreenManager.registerFactory(ContainerInit.ZENDIO_ENTIO_CONTAINER.get(), LeatBlockCraftingTableScreen::new);
         });*/
+        /*if (DimensionType.byName(Eman_mod_1.EXAMPLE_DIM_TYPE) == null) {
+            DimensionManager.registerDimension(Eman_mod_1.EXAMPLE_DIM_TYPE, DimensionInit.EXAMPLE_DIM.get(), null,
+                    true);
+        }*/
     }
 }

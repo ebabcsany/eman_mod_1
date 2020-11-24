@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "eman_mod_1:block/firg_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "eman_mod_1:block/firg_log"
+    },
+    "axis=z": {
+      "model": "eman_mod_1:block/firg_log_horizontal",
+      "x": 90
+    }
+  }
+}

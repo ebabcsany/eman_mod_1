@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "eman_mod_1:block/firg_sapling"
+  }
+}

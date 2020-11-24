@@ -11,10 +11,10 @@
     },
     "Z": {
       "item": "eman_mod_1:pirzen_urne"
-    },
-    "result": {
-      "item": "eman_mod_1:pirzen_urne_pickaxe",
-      "count": 1
     }
+  },
+  "result": {
+    "item": "eman_mod_1:pirzen_urne_pickaxe",
+    "count": 1
   }
 }

@@ -1,4 +1,4 @@
-package com.babcsany.minecraft.eman_mod_1.client.inventory;
+package com.babcsany.minecraft.eman_mod_1.inventory;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.IInventory;
@@ -68,4 +68,3 @@ public class ZendioEntioInventory implements IInventory {
         inventory.clear();
     }
 }
-

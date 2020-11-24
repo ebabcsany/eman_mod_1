@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "###",
-    "# #",
+    " # ",
     "###"
   ],
   "key": {
     "#": {
-      "item": "eman_mod_1:sajt"
+      "item": "eman_mod_1:pirzen_urne"
     }
   },
   "result": {
     "item": "eman_mod_1:daxi_rof_tuzzi",
-    "count": 3
+    "count": 1
   }
 }

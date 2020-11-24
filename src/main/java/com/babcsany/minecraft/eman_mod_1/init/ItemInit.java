@@ -1,8 +1,11 @@
 package com.babcsany.minecraft.eman_mod_1.init;
 
 import com.babcsany.minecraft.eman_mod_1.Eman_mod_1;
+import com.babcsany.minecraft.eman_mod_1.item.IrtatedserwintKrezonItem;
 import com.babcsany.minecraft.eman_mod_1.item.ModArmorMaterial;
 import com.babcsany.minecraft.eman_mod_1.item.ModItemTier;
+import com.babcsany.minecraft.eman_mod_1.item.TurgShieldItem;
+import net.minecraft.block.Block;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
@@ -15,7 +18,7 @@ import static com.babcsany.minecraft.eman_mod_1.item.ModItemTier.*;
 
 public class ItemInit {
 
-    public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, Eman_mod_1.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Eman_mod_1.MOD_ID);
 
     public static final RegistryObject<Item> DAXI_ROF_TUZZI = ITEMS.register("daxi_rof_tuzzi", () -> new Item(
             (new Item.Properties())
@@ -32,7 +35,7 @@ public class ItemInit {
     public static final RegistryObject<Item> HUS_OS_SAJT = ITEMS.register("hus_os_sajt", () -> new Item(
             (new Item.Properties().food(FoodInit.HUS_OS_SAJT).group(ItemGroup.MATERIALS))
     ));
-    public static final RegistryObject<Item> IRTATEDSERWINT_KREZON = ITEMS.register("irtatedserwint_krezon", () -> new Item(
+    public static final RegistryObject<Item> IRTATEDSERWINT_KREZON = ITEMS.register("irtatedserwint_krezon", () -> new IrtatedserwintKrezonItem(
             (new Item.Properties().group(ItemGroup.MATERIALS))
     ));
     public static final RegistryObject<Item> PIRZEN_URNE_HELMET = ITEMS.register("pirzen_urne_helmet", () -> new ArmorItem(
@@ -64,5 +67,27 @@ public class ItemInit {
     );
     public static final RegistryObject<Item> DIRT_STICK = ITEMS.register("dirt_stick", () -> new Item(
             (new Item.Properties().group(ItemGroup.MATERIALS))
+    ));
+    public static final RegistryObject<Item> biltukiopencvedsert = ITEMS.register("biltukiopencvedsert", () -> new Item(
+            (new Item.Properties().group(ItemGroup.MATERIALS))
+    ));
+    public static final RegistryObject<Item> TURG_SHIELD = ITEMS.register("turg_shield", () -> new ShieldItem(
+            (new Item.Properties()
+                    .maxDamage(5000)
+                    .group(ItemGroup.COMBAT))
+    ));
+    public static final RegistryObject<Item> RED_BOW = ITEMS.register("red_bow", () -> new BowItem(
+            (new Item.Properties()
+                    .maxDamage(384)
+                    .group(ItemGroup.COMBAT))
+    ));
+    public static final RegistryObject<Item> PIRZEN_URNE_SHOVEL = ITEMS.register("pirzen_urne_shovel", () -> new ShovelItem(
+            ModItemTier.PIRZEN_URNE, 73283, 230.0F, (new Item.Properties())
+    ));
+    public static final RegistryObject<Item> PIRZEN_URNE_HOE = ITEMS.register("pirzen_urne_hoe", () -> new HoeItem(
+            ModItemTier.PIRZEN_URNE, 4, 73287642.4F, (new Item.Properties())
+    ));
+    public static final RegistryObject<Item> PIRZEN_URNE_SWORD = ITEMS.register("pirzen_urne_sword", () -> new SwordItem(
+            ModItemTier.PIRZEN_URNE, 938786237, 7856776.0F, (new Item.Properties())
     ));
 }

@@ -13,10 +13,10 @@
     },
     "M": {
       "item": "minecraft:paper"
-    },
-    "result": {
-      "item": "eman_mod_1:hus_os_sajt",
-      "count": 2
     }
+  },
+  "result": {
+    "item": "eman_mod_1:hus_os_sajt",
+    "count": 2
   }
 }

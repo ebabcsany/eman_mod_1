@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TPT",
+    "LPL",
+    "TPT"
+  ],
+  "key": {
+    "T": {
+      "item": "minecraft:netherrack"
+    },
+    "L": {
+      "item": "minecraft:nether_wart"
+    },
+    "P": {
+      "item": "minecraft:stone"
+    },
+    "result": {
+      "item": "minecraft:diamond",
+      "count": 27
+    }
+  }
+}

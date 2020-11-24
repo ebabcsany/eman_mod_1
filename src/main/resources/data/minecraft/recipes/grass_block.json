@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "B#B",
+    "BBB"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:dirt"
+    },
+    "B": {
+      "tag": "ervin_mod_1:zurk_ingredient"
+    }
+  },
+  "result": {
+    "item": "minecraft:grass_block",
+    "count": 1
+  }
+}

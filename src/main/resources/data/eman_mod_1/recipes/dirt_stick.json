@@ -7,10 +7,10 @@
   "key": {
     "#": {
       "item": "minecraft:dirt"
-    },
-    "result": {
-      "item": "eman_mod_1:dirt_stick",
-      "count": 2
     }
+  },
+  "result": {
+    "item": "eman_mod_1:dirt_stick",
+    "count": 2
   }
 }
