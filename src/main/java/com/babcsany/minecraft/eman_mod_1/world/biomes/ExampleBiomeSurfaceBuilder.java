@@ -35,7 +35,7 @@ public class ExampleBiomeSurfaceBuilder extends SurfaceBuilder<SurfaceBuilderCon
 					new SurfaceBuilderConfig(
 							i == 1 ? Blocks.GRASS_BLOCK.getDefaultState()
 									: Blocks.DIAMOND_BLOCK.getDefaultState(),
-							BlockInit.PIRZEN_URNE_ORE.get().getDefaultState(), Blocks.EMERALD_ORE.getDefaultState()
+							BlockInit.ZENDIO_ENTIO.get().getDefaultState(), Blocks.EMERALD_ORE.getDefaultState()
 					));
 		}
 	}

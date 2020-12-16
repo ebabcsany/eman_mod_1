@@ -81,4 +81,10 @@ public class BlockInit {
                     .sound(SoundType.PLANT)
                     .notSolid()
     ));
+    public static final RegistryObject<Block> OPIJER_HEDCERLEND_BLOKKKKKKI_GEDZDFGVB = BLOCKS.register("opijer_hedcerlend_blokkkkkki_gedzdfgvb", () -> new OpijerHedcerlendBlokkkkkkiGedzdfgvb(
+            Block.Properties.create(Material.ROCK)
+                    .harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .hardnessAndResistance(1000.0f)
+    ));
 }
