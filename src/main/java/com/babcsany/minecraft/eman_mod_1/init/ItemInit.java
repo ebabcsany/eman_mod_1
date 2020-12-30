@@ -90,4 +90,16 @@ public class ItemInit {
     public static final RegistryObject<Item> PIRZEN_URNE_SWORD = ITEMS.register("pirzen_urne_sword", () -> new SwordItem(
             ModItemTier.PIRZEN_URNE, 938786237, 7856776.0F, (new Item.Properties())
     ));
+    public static final RegistryObject<Item> DAXI_ROF_TUZZI_HELMET = ITEMS.register("daxi_rof_tuzzi_helmet", () -> new ArmorItem(
+            ModArmorMaterial.PIRZEN_URNE, EquipmentSlotType.HEAD, (new Item.Properties().group(ItemGroup.COMBAT))
+    ));
+    public static final RegistryObject<Item> DAXI_ROF_TUZZI_CHESTPLATE = ITEMS.register("daxi_rof_tuzzi_chestplate", () -> new ArmorItem(
+            ModArmorMaterial.PIRZEN_URNE, EquipmentSlotType.CHEST, (new Item.Properties().group(ItemGroup.COMBAT))
+    ));
+    public static final RegistryObject<Item> DAXI_ROF_TUZZI_LEGGINGS = ITEMS.register("daxi_rof_tuzzi_leggings", () -> new ArmorItem(
+            ModArmorMaterial.PIRZEN_URNE, EquipmentSlotType.LEGS, (new Item.Properties().group(ItemGroup.COMBAT))
+    ));
+    public static final RegistryObject<Item> DAXI_ROF_TUZZI_BOOTS = ITEMS.register("daxi_rof_tuzzi_boots", () -> new ArmorItem(
+            ModArmorMaterial.PIRZEN_URNE, EquipmentSlotType.FEET, (new Item.Properties().group(ItemGroup.COMBAT))
+    ));
 }

@@ -14,8 +14,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements IArmorMaterial {
-    PIRZEN_URNE(Eman_mod_1.MOD_ID + ":pirzen_urne", 20, new int[]{800, 480, 600, 510}, 1000000, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 5000930.3562F, () -> { return Ingredient.fromItems(ItemInit.PIRZEN_URNE.get()); });
-//    TERAT(Eman_mod_1.MOD_ID +":terat", 80,new int[]{112, 144, 176, 112}, 1680,SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 86.8F, () -> { return Ingredient.fromItems(ItemInit.TERAT.get()); });
+    PIRZEN_URNE(Eman_mod_1.MOD_ID + ":pirzen_urne", 20, new int[]{600, 800, 1000, 600}, 1000000, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 5000930.3562F, () -> { return Ingredient.fromItems(ItemInit.PIRZEN_URNE.get()); }),
+    Daxi_rof_tuzzi(Eman_mod_1.MOD_ID +":daxi_rof_tuzzi", 80,new int[]{999999999, 999999999, 999999999, 999999999}, 8000000,SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 86.8F, () -> { return Ingredient.fromItems(ItemInit.DAXI_ROF_TUZZI.get()); });
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[] { 4761887, 2719018, 9010001, 1700000 };
     private final String name;
