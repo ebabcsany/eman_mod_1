@@ -17,7 +17,7 @@ public enum ModItemTier implements IItemTier {
     // enchantability, Supplier<Ingredient> repairMaterial
     PIRZEN_URNE(86, 100000, 1200000.0F, 1000000.0F, 5181607, () -> Ingredient.fromItems(ItemInit.PIRZEN_URNE.get())),
     daxi_rof_tuzzi(157, 999999999, 12003847789989987.0F, 999999999999999999999.72382F, 5181607, () -> Ingredient.fromItems(ItemInit.DAXI_ROF_TUZZI.get())),
-    DIRT(1, 3, 12.32F, 2.0F, 0, () -> Ingredient.fromItems(Blocks.DIRT));
+    DIRT(5, 10, 127263.32F, 28323762.0F, 100, () -> Ingredient.fromItems(Blocks.DIRT));
 
     private final int harvestLevel;
     private final int maxUses;

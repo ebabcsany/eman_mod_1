@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "eman_mod_1:pirzen_urne"
+      "item": "eman_mod_1:pirzen_urne_block"
     }
   },
   "result": {
     "item": "eman_mod_1:daxi_rof_tuzzi",
-    "count": 1
+    "count": 5
   }
 }

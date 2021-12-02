@@ -8,5 +8,26 @@
     <file url="file://$PROJECT_DIR$/run/saves/New World (5)/session.lock" charset="UTF-16" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/babcsany/minecraft/eman_mod_1/client/entity/layers/ZerunerdifirteZerunerdifirtaLayer.java" charset="windows-1250" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/babcsany/minecraft/eman_mod_1/client/entity/model/ZerunerdifirteZerunerdifirtaModel.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/babcsany/minecraft/eman_mod_1/init/init/MaterialColorInit.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/babcsany/minecraft/eman_mod_1/init/init/MaterialInit.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/babcsany/minecraft/eman_mod_1/item/DaxiRofTuzzi.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/babcsany/minecraft/eman_mod_1/item/SpawnEggItem1.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/babcsany/minecraft/eman_mod_1/item/TieredDaxiRofTuzziItem.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/babcsany/minecraft/eman_mod_1/item/tool/IItemTier1.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/babcsany/minecraft/eman_mod_1/item/tool/ModItemTier.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/babcsany/minecraft/eman_mod_1/item/tool/ModItemTier2.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/babcsany/minecraft/eman_mod_1/world/gen/FeatureGen.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/net/minecraft/entity/player/PlayerEntity.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/java/net/minecraft/entity/player/PlayerInventory.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/assets/eman_mod_1/textures/gui/container/crafting_button.png" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/assets/eman_mod_1/textures/item/empty_armor_slot_boots.png" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/assets/eman_mod_1/textures/item/empty_armor_slot_chestplate.png" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/assets/eman_mod_1/textures/item/empty_armor_slot_helmet.png" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/assets/eman_mod_1/textures/item/empty_armor_slot_leggings.png" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/assets/eman_mod_1/textures/item/empty_armor_slot_shield.png" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/data/minecraft/loot_tables/entities/zombie.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/data/minecraft/loot_tables/gameplay/fishing/junk.json" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/data/minecraft/loot_tables/gameplay/fishing/treasure.json" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/data/minecraft/net/minecraft/loot_tables/entities/zombie.json" charset="windows-1250" />
   </component>
 </project>

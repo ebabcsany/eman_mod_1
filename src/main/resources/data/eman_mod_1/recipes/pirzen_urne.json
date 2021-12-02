@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "Z#Z",
+    "###",
+    "Z#Z"
+  ],
+  "key": {
+    "#": {
+      "item": "minwecraft:netherite_block"
+    },
+    "Z": {
+      "item": "eman_mod_1:hus_os_sajt"
+    }
+  },
+  "result": {
+    "item": "eman_mod_1:pirzen_urne",
+    "count": 1
+  }
+}

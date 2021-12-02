@@ -2,16 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "###",
-    "####",
+    "Z Z",
     "###"
   ],
   "key": {
     "#": {
       "item": "minecraft:diamond_block"
+    },
+    "Z": {
+      "item": "eman_mod_1:pirzen_urne"
     }
   },
   "result": {
     "item": "minecraft:apple",
-    "count": 1
+    "count": 256
   }
 }

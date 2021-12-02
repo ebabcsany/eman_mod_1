@@ -42,6 +42,10 @@
         },
         {
           "type": "minecraft:item",
+          "name": "ervin_mod_1:air"
+        },
+        {
+          "type": "minecraft:item",
           "functions": [
             {
               "function": "minecraft:set_damage",
@@ -78,10 +82,11 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
-              "levels": 30,
+              "levels": 80,
               "treasure": true
             }
           ],
@@ -90,6 +95,10 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:nautilus_shell"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ervin_mod_1:spawn_eggs/gubrov_spawn_egg"
         }
       ]
     }

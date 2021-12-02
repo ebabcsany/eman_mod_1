@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "eman_mod_1:daxi_rof_tuzzi"
+    }
+  },
+  "result": {
+    "item": "eman_mod_1:daxi_rof_tuzzi_block",
+    "count": 1
+  }
+}

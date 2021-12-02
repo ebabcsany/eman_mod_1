@@ -32,6 +32,7 @@ public class ModDefaultBiomeFeatures {
    private static final BlockState LOXIZA = BlockInit.LOXIZA.get().getDefaultState();
    private static final BlockState KIWITERDIA = BlockInit.KIWITERDIA.get().getDefaultState();
    private static final BlockState PIRZEN_URNE_ORE = BlockInit.PIRZEN_URNE_ORE.get().getDefaultState();
+   private static final BlockState NETHERITE_ORE = BlockInit.NETHERITE_ORE.get().getDefaultState();
    private static final BlockState FIRG_LOG = BlockInit.FIRG_LOG.get().getDefaultState();
    private static final BlockState FIRG_LEAVES = BlockInit.FIRG_LEAVES.get().getDefaultState();
    private static final BlockState FERN = Blocks.FERN.getDefaultState();
@@ -229,6 +230,7 @@ public class ModDefaultBiomeFeatures {
       biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, DIAMOND_ORE, 8)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(1, 0, 0, 16))));
       biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, LAPIS_ORE, 7)).withPlacement(Placement.COUNT_DEPTH_AVERAGE.configure(new DepthAverageConfig(1, 16, 16))));
       biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, PIRZEN_URNE_ORE, 1)).withPlacement(Placement.COUNT_DEPTH_AVERAGE.configure(new DepthAverageConfig(1, 4, 4))));
+      biomeIn.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, NETHERITE_ORE, 5)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(1, 4, 4, 16))));
    }
 
    public static void addExtraGoldOre(Biome biomeIn) {

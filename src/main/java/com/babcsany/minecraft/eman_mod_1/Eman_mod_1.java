@@ -1,7 +1,10 @@
 package com.babcsany.minecraft.eman_mod_1;
 
 import com.babcsany.minecraft.eman_mod_1.entity.animal.Zerunerdifirte;
+import com.babcsany.minecraft.eman_mod_1.entity.villager.EpicTrader;
+import com.babcsany.minecraft.eman_mod_1.entity.villager.Oplikuxi;
 import com.babcsany.minecraft.eman_mod_1.init.*;
+import com.babcsany.minecraft.eman_mod_1.world.gen.FeatureGen;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
@@ -11,6 +14,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.crafting.IRecipeSerializer;
 import net.minecraft.item.crafting.ShapedRecipe;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -56,7 +60,7 @@ public class Eman_mod_1 {
 
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
-     //   ContainerInit.CONTAINER_TYPES.register(modEventBus);
+        ContainerInit.CONTAINER_TYPES.register(modEventBus);
         EntityInit.ENTITY_TYPES.register(modEventBus);
         BiomeInit.BIOMES.register(modEventBus);
         //DimensionInit.MOD_DIMENSIONS.register(modEventBus);
@@ -68,7 +72,11 @@ public class Eman_mod_1 {
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
         DeferredWorkQueue.runLater(() -> {
             GlobalEntityTypeAttributes.put(EntityInit.ZERUNERDIFIRTE.get(), Zerunerdifirte.setCustomAttributes().create());
+            GlobalEntityTypeAttributes.put(EntityInit.EPIC_TRADER.get(), EpicTrader.setCustomAttributes().create());
+            GlobalEntityTypeAttributes.put(EntityInit.OPLIKUXI.get(), Oplikuxi.setCustomAttributes().create());
         });
+
+        DeferredWorkQueue.runLater(FeatureGen::generateFeature);
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
@@ -106,6 +114,11 @@ public class Eman_mod_1 {
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
             // register a new block here
             LOGGER.info("HELLO from Register Block");
+        }
+
+        @SubscribeEvent
+        public static void onRegisterBiomes(final RegistryEvent.Register<Biome> event) {
+            BiomeInit.registerBiomes();
         }
 
         @SubscribeEvent

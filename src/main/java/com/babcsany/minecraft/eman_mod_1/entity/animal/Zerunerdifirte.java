@@ -48,7 +48,7 @@ import static net.minecraftforge.api.distmarker.Dist.CLIENT;
 public class Zerunerdifirte extends AnimalEntity implements IShearable, net.minecraftforge.common.IForgeShearable {
     public static final DataParameter<Byte> DYE_COLOR = EntityDataManager.createKey(Zerunerdifirte.class, DataSerializers.BYTE);
     public static final Map<DyeColor, IItemProvider> WOOL_BY_COLOR = Util.make(Maps.newEnumMap(DyeColor.class), (p_203402_0_) -> {
-        p_203402_0_.put(DyeColor.GREEN, BlockInit.KIWITERDIA.get());
+        p_203402_0_.put(DyeColor.GRAY, BlockInit.KIWITERDIA.get());
         p_203402_0_.put(DyeColor.WHITE, Blocks.WHITE_WOOL);
         p_203402_0_.put(DyeColor.ORANGE, Blocks.ORANGE_WOOL);
         p_203402_0_.put(DyeColor.MAGENTA, Blocks.MAGENTA_WOOL);
@@ -56,7 +56,7 @@ public class Zerunerdifirte extends AnimalEntity implements IShearable, net.mine
         p_203402_0_.put(DyeColor.YELLOW, Blocks.YELLOW_WOOL);
         p_203402_0_.put(DyeColor.LIME, Blocks.LIME_WOOL);
         p_203402_0_.put(DyeColor.PINK, Blocks.PINK_WOOL);
-        p_203402_0_.put(DyeColor.GRAY, Blocks.GRAY_WOOL);
+        p_203402_0_.put(DyeColor.GREEN, Blocks.GREEN_WOOL);
         p_203402_0_.put(DyeColor.LIGHT_GRAY, Blocks.LIGHT_GRAY_WOOL);
         p_203402_0_.put(DyeColor.CYAN, Blocks.CYAN_WOOL);
         p_203402_0_.put(DyeColor.PURPLE, Blocks.PURPLE_WOOL);
@@ -134,7 +134,7 @@ public class Zerunerdifirte extends AnimalEntity implements IShearable, net.mine
             return this.getType().getLootTable();
         } else {
             switch(this.getFleeceColor()) {
-                case GREEN:
+                case GRAY:
                 default:
                     return LootTables1.ENTITIES_ZERUNERDIFIRTE;
                 case ORANGE:
@@ -149,7 +149,7 @@ public class Zerunerdifirte extends AnimalEntity implements IShearable, net.mine
                     return LootTables.ENTITIES_SHEEP_LIME;
                 case PINK:
                     return LootTables.ENTITIES_SHEEP_PINK;
-                case GRAY:
+                case GREEN:
                     return LootTables.ENTITIES_SHEEP_GRAY;
                 case LIGHT_GRAY:
                     return LootTables.ENTITIES_SHEEP_LIGHT_GRAY;

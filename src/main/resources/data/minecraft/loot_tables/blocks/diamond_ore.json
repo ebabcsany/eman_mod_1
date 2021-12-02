@@ -2,7 +2,7 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 51,
+      "rolls": 3,
       "entries": [
         {
           "type": "minecraft:alternatives",
@@ -45,38 +45,14 @@
       ]
     },
     {
-      "rolls": 96,
+      "rolls": {
+        "min": -5,
+        "max": 6
+      },
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_ingot"
-        }
-      ]
-    },
-    {
-      "rolls": 84,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:gold_ingot"
-        }
-      ]
-    },
-    {
-      "rolls": 126,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:coal"
-        }
-      ]
-    },
-    {
-      "rolls": 174,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:cobblestone"
+          "name": "minecraft:spawner"
         }
       ]
     }

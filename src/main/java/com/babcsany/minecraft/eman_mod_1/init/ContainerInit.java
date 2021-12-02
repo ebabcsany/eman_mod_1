@@ -1,7 +1,7 @@
 package com.babcsany.minecraft.eman_mod_1.init;
 
 import com.babcsany.minecraft.eman_mod_1.Eman_mod_1;
-//import com.babcsany.minecraft.eman_mod_1.container.ZendioEntioContainer;
+import com.babcsany.minecraft.eman_mod_1.container.RedDowWitsipContainer;
 import com.babcsany.minecraft.eman_mod_1.container.ZendioEntioContainer;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.ContainerType;
@@ -17,4 +17,7 @@ public class ContainerInit {
 
     public static final RegistryObject<ContainerType<ZendioEntioContainer>> ZENDIO_ENTIO_CONTAINER = CONTAINER_TYPES
             .register("zendio_entio", () -> IForgeContainerType.create(ZendioEntioContainer::new));
+    public static final RegistryObject<ContainerType<RedDowWitsipContainer>> RED_DOW_WITSIP_CONTAINER = CONTAINER_TYPES
+            .register("red_dow_witsip", () -> IForgeContainerType.create(RedDowWitsipContainer::new));
+
 }

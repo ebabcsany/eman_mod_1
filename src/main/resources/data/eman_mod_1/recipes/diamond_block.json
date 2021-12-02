@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "eman_mod_1:diamond_block_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft:diamond_block",
+    "count": 9
+  }
+}

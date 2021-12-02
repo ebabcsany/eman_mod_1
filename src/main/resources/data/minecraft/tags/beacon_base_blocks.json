@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "eman_mod_1:nether_star_block",
+    "minecraft:netherite_block",
+    "minecraft:emerald_block",
+    "minecraft:diamond_block",
+    "minecraft:gold_block",
+    "minecraft:iron_block"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "eman_mod_1:block/daxi_rof_tuzzi_block"
+  }
+}

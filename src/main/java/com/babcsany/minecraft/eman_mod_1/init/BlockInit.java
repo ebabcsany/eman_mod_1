@@ -38,15 +38,21 @@ public class BlockInit {
     ));
     public static final RegistryObject<Block> PIRZEN_URNE_ORE = BLOCKS.register("pirzen_urne_ore", () -> new Block(
             Block.Properties.create(Material.ROCK)
-                    .harvestLevel(3)
+                    .harvestLevel(4)
                     .harvestTool(ToolType.PICKAXE)
                     .hardnessAndResistance(10000.0f)
+    ));
+    public static final RegistryObject<Block> NETHERITE_ORE = BLOCKS.register("netherite_ore", () -> new Block(
+            Block.Properties.create(Material.ROCK)
+                    .harvestLevel(3)
+                    .harvestTool(ToolType.PICKAXE)
+                    .hardnessAndResistance(100.0f)
     ));
     public static final RegistryObject<Block> ZENDIO_ENTIO = BLOCKS.register("zendio_entio", () -> new ZendioEntio(
             Block.Properties.create(Material.ROCK)
                     .harvestLevel(65)
                     .harvestTool(ToolType.PICKAXE)
-                    .hardnessAndResistance(10000.0f)
+                    .hardnessAndResistance(1000000.0f)
     ));
     public static final RegistryObject<Block> BIONRINEN_UDEZTRI = BLOCKS.register("bionrinen_udeztri", () -> new BionrinenUdeztri(
             Block.Properties.create(Material.ROCK)
@@ -86,5 +92,23 @@ public class BlockInit {
                     .harvestLevel(2)
                     .harvestTool(ToolType.PICKAXE)
                     .hardnessAndResistance(1000.0f)
+    ));
+    public static final RegistryObject<Block> PIRZEN_URNE_BLOCK = BLOCKS.register("pirzen_urne_block", () -> new Block(
+            Block.Properties.create(Material.ROCK)
+                    .harvestLevel(30)
+                    .harvestTool(ToolType.PICKAXE)
+                    .hardnessAndResistance(10000000.0f)
+    ));
+    public static final RegistryObject<Block> DAXI_ROF_TUZZI_BLOCK = BLOCKS.register("daxi_rof_tuzzi_block", () -> new Block(
+            Block.Properties.create(Material.ROCK)
+                    .harvestLevel(30)
+                    .harvestTool(ToolType.PICKAXE)
+                    .hardnessAndResistance(10000000.0f)
+    ));
+    public static final RegistryObject<Block> DIAMOND_BLOCK_BLOCK = BLOCKS.register("diamond_block_block", () -> new Block(
+            Block.Properties.create(Material.ROCK)
+                    .harvestLevel(4)
+                    .harvestTool(ToolType.PICKAXE)
+                    .hardnessAndResistance(100.0f)
     ));
 }
